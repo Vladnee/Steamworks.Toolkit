@@ -1,0 +1,18 @@
+{
+    "name": "Steamworks.Toolkit",
+    "rootNamespace": "",
+    "references": [
+        "GUID:68bd7fdb68ef2684e982e8a9825b18a5",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:c0c7f24d3fb3e084caeee71dd8b2cb34"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
