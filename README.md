@@ -8,14 +8,13 @@ It allows awaiting and observing **CallResult** and **Callback** events in an as
 ## Requirements
 
 ### Required
-- Steamworks.NET
-- UniTask
-- Newtonsoft.Json
+- [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET)
+- [UniTask](https://github.com/Cysharp/UniTask)
+- [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json)
 
 ### Optional
-- HyTeKGames.AnimatedImages  
-  https://assetstore.unity.com/packages/tools/utilities/animatedimages-easily-play-gifs-apng-webp-more-282390  
-  *(used for animated avatar / frame if present)*
+- [HyTeKGames.AnimatedImages](https://assetstore.unity.com/packages/tools/utilities/animatedimages-easily-play-gifs-apng-webp-more-282390) — used for animated avatar / frame if present
+
 
 ---
 
