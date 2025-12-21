@@ -115,6 +115,17 @@ var user = UserData.Get( steamId );
 var stateChange = await PersonaStateChangeAwaiter.Instance.WaitAsync( user );
 ```
 
+#### Await a Steam API handle
+
+Some Steam APIs return a handle that is later completed via a callback.
+Such handles can be awaited directly using the toolkit via an extension method.
+
+```csharp
+SteamInventory.GetAllItems( out var handle );
+
+var inventoryResult = await handle.ToUniTask( );
+```
+
 #### Built-in HandleAwaiters
 Steamworks Toolkit already provides the following handle-based awaiters:
 
