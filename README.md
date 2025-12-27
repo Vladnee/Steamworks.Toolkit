@@ -88,6 +88,10 @@ if( ioError )
 ```
 
 #### Observe CallResult completions globally
+
+You can subscribe to SteamCallResultObserver<T> to be notified when a specific
+Steam CallResult completes.
+
 ```csharp
 SteamCallResultObserver<SteamInventoryRequestPricesResult_t>.OnTrigger += OnPricesReady;
 
@@ -96,6 +100,15 @@ static void OnPricesReady( SteamInventoryRequestPricesResult_t result, bool ioEr
     // react to price update
 }
 ```
+
+Note:
+SteamCallResultObserver<T> is triggered only for CallResults that are being awaited
+or explicitly observed.
+If a CallResult is started without awaiting or observing it, the observer will not
+be invoked.
+
+If you don't want to await the CallResult, but still need to receive its completion
+callback via SteamCallResultObserver<T>, use Observe<T>().
 
 Trigger observation without awaiting:
 ```csharp
